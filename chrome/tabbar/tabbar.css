@@ -9,7 +9,7 @@
 	{
 		-moz-appearance: none !important;
 	}
-	
+
 	:root:-moz-any([inFullscreen], [tabsintitlebar]):not([privatebrowsingmode=temporary]) #TabsToolbar:not(:-moz-lwtheme)
 	{
 		background-color: #dee1e5 !important;
@@ -17,12 +17,12 @@
 		--toolbarbutton-hover-background: #cbced2 !important;
 		--toolbarbutton-active-background: #bec0c5 !important;
 	}
-	
+
 	:root:-moz-any([inFullscreen], [tabsintitlebar]):not([privatebrowsingmode=temporary]) #TabsToolbar:not(:-moz-lwtheme):-moz-window-inactive
 	{
 		background-color: #e7eaed !important;
 	}
-	
+
 	:-moz-any(.titlebar-placeholder, .titlebar-spacer)[type=pre-tabs]
 	{
 		width: 4px !important;
@@ -37,18 +37,18 @@
 		--toolbarbutton-hover-background: rgba(196, 198, 204, .8) !important;
 		--toolbarbutton-active-background: #bec0c6 !important;
 	}
-	
+
 	:root:not([privatebrowsingmode=temporary]) #TabsToolbar toolbarbutton:not(:-moz-lwtheme):not(:hover):not([open])
 	{
 		background-color: rgba(218, 220, 227, .8) !important;
 	}
-	
+
 	:root:not([privatebrowsingmode=temporary]) .tabbrowser-tab:not([visuallyselected]):not(:-moz-lwtheme)
 	{
 		--tab-bgcolor: rgb(218, 220, 227) !important;
 		--tab-opacity: .8 !important;
 	}
-	
+
 	:root:not([privatebrowsingmode=temporary]) .tabbrowser-tab:hover:not([visuallyselected]):not(:-moz-lwtheme)
 	{
 		--tab-bgcolor: #e9ebef !important;
@@ -428,7 +428,7 @@
 .tab-close-button[pinned]
 {
 	visibility: hidden !important;
-} 
+}
 
 /* close button / favicon is centered within 36px tab */
 @supports -moz-bool-pref("materialFox.reduceTabOverflow")
@@ -438,17 +438,17 @@
 		/* same as Chrome */
 		min-width: 500px !important;
 	}
-	
+
 	#tabbrowser-tabs[overflow] .tab-content
 	{
 		-moz-box-pack: center !important;
 	}
-	
+
 	#tabbrowser-tabs[overflow] .tab-icon-image
 	{
 		margin: auto !important;
 	}
-	
+
 	#tabbrowser-tabs[overflow] .tab-content[image]:not([image^="chrome://branding/"]):not([pinned])
 	{
 		width: 36px !important;
@@ -456,13 +456,13 @@
 		padding-inline-start: 0 !important;
 		padding-inline-end: 0 !important;
 	}
-	
+
 	#tabbrowser-tabs[overflow] .tabbrowser-tab:not([visuallyselected]):not([pinned]) .tab-close-button,
 	#tabbrowser-tabs[overflow] .tabbrowser-tab[visuallyselected]:not([pinned]) :-moz-any(.tab-label-container, .tab-icon-image),
 	#tabbrowser-tabs[overflow] .tabbrowser-tab[image]:not([image^="chrome://branding/"]):not([pinned]) .tab-label-container
 	{
 		display: none !important;
-	} 
+	}
 }
 
 #tabbrowser-tabs #tabs-newtab-button
@@ -487,11 +487,6 @@
 #tabbrowser-tabs:not([overflow]) .tabbrowser-tab[first-visible-tab]
 {
 	margin-inline-start: 8px !important;
-}
-
-#tabbrowser-tabs[overflow] .tabbrowser-tab[last-visible-tab]:not([pinned])
-{
-	margin-inline-end: 8px !important;
 }
 
 .tabbrowser-tab[usercontextid] > .tab-stack::after
@@ -556,7 +551,7 @@ spacer[part="overflow-end-indicator"]
 	{
 		transform: translate(-1px, .5px) !important;
 	}
-	
+
 	/* macOS */
 	@media (-moz-mac-yosemite-theme)
 	{
